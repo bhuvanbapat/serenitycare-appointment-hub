@@ -34,7 +34,7 @@ const AdminLogin = () => {
     // Simulate admin authentication
     setTimeout(() => {
       // Mock admin credentials check
-      if (credentials.username === 'admin' && credentials.password === 'serenity2024') {
+      if (credentials.username === import.meta.env.VITE_ADMIN_USERNAME && credentials.password === import.meta.env.VITE_ADMIN_PASSWORD) {
         const adminData = {
           id: 'admin-001',
           username: credentials.username,
